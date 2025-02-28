@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Gilroy Bold';
+    src: url('/fonts/Gilroy-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter_18pt-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap
+}
+
+body {
+    font-family: 'Inter'
+}
+
+@layer utilities {
+    .delay-100 { animation-delay: 100ms; }
+    .delay-200 { animation-delay: 200ms; }
+    .delay-300 { animation-delay: 300ms; }
+    .delay-400 { animation-delay: 400ms; }
+    .delay-500 { animation-delay: 500ms; }
+    .delay-1000 { animation-delay: 1000ms; }
+  }
+
+@keyframes fade-slide {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-slide-1 {
+    animation: fade-slide 0.6 ease-out forwards;
+  }
+
+  .animate-fade-slide-2 {
+    animation: fade-slide 0.4 ease-out forwards;
+  }

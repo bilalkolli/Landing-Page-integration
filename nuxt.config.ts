@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/tailwindcss',
-    '@nuxt/image',
-    '@nuxtjs/google-fonts'
-  ]
+    '@nuxt/image'
+  ],
+  css: ['./assets/tailwind.css']
 })
